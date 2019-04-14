@@ -2,7 +2,7 @@
 
 // TODO: move to autoloader
 require('./classes/View.php');
-require('./model/People.php');
+require('./model/People.php'); 
 
 class PeopleController
 {
