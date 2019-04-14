@@ -2,6 +2,7 @@
 
 require('./db.php');
 
+// autoloading all controllers
 spl_autoload_register(function($class){
 	require('./controller/'.$class.'.php');
 });
