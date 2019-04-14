@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require('./db.php');
 
@@ -6,6 +6,8 @@ require('./db.php');
 spl_autoload_register(function($class){
 	require('./controller/'.$class.'.php');
 });
+
+// NOTE: Here autoload models, custom function.
 
 $controller = new PeopleController();
 $controller->all();
@@ -19,4 +21,3 @@ $controller->all();
 // }
 
 // echo "Connected successfully";
-
