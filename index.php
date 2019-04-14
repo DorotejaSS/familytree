@@ -1,6 +1,7 @@
 <?php
 
 require('./db.php');
+require('./classes/Router.php');
 
 // autoloading all controllers
 spl_autoload_register(function($class){
@@ -8,6 +9,10 @@ spl_autoload_register(function($class){
 });
 
 // NOTE: Here autoload models, custom function.
+
+
+$router = new Router();
+
 
 $controller = new PeopleController();
 $controller->all();
