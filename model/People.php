@@ -16,6 +16,4 @@ class People
 
 		return $this->info;
 	}
-
-	
 }
