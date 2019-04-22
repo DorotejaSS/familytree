@@ -18,5 +18,3 @@ while ($people = $res->fetch_object()){
 }
 
 $json_people = json_encode($found_people);
-
-	echo $json_movies;

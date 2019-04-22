@@ -22,7 +22,7 @@ class Router
 	private function show404()
 	{
 		$view = new View();
-    	$view->load('page', '404');
+		$view->load('page', '404');
 	}
 
 	private function instantiateController($controller_name)
