@@ -13,6 +13,7 @@ class PeopleController
 
 		$view = new View();
 		$view->info['people'] = $people_model->getAll();
-		$view->load('people', 'index');
+		// $view->load('people', 'index');
+		$view->load('people', 'new');
 	}
 }
